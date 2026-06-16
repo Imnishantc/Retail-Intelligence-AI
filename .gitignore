@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+
+.env
+
+chart.png
+
+.ipynb_checkpoints/
+
+.vscode/
+
+*.db
+
+.DS_Store
