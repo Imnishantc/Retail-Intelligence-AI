@@ -1,9 +1,18 @@
 
 # Retail-Intelligence-AI
 
-An AI-powered data analytics application that enables users to query a PostgreSQL database using natural language. The system converts user questions into SQL queries using a Large Language Model (Mistral AI), executes them on a retail sales database, and generates business insights along with visualizations.
+An end-to-end AI-powered Business Intelligence application that enables users to interact with a PostgreSQL database using natural language. The system leverages Mistral AI and LangChain to convert business questions into SQL queries, execute them on a retail sales database, generate business insights, and visualize results through an interactive Streamlit dashboard.
 
----
+## Key Highlights
+
+- Natural Language → SQL Query Generation using Mistral AI
+- AI-Powered Business Insight Generation
+- PostgreSQL Database Integration
+- Interactive Streamlit Dashboard
+- Automated Data Visualization
+- Dockerized Deployment
+- Modular and Scalable Architecture
+
 
 ## Project Overview
 
@@ -23,75 +32,81 @@ Natural Language → SQL Query → PostgreSQL Execution → Business Insight →
 
 ---
 
-## Architecture
+## Docker Support
 
-```text
-User Question
-      ↓
-Streamlit Dashboard
-      ↓
-Mistral AI + LangChain
-      ↓
-SQL Query Generation
-      ↓
-PostgreSQL Database
-      ↓
-Query Execution
-      ↓
-Results
-      ↓
-Business Insight Generation
-      ↓
-Data Visualization
+Build Docker Image
+
+```bash
+docker build -t retail-intelligence-ai .
 ```
 
----
+Run Docker Container
+
+```bash
+docker run -p 8501:8501 --env-file .env retail-intelligence-ai
+```
+
+The application will be available at:
+
+http://localhost:8501
+
+## Architecture
+
+<img width="610" height="908" alt="image" src="https://github.com/user-attachments/assets/2ea7125e-2951-4219-863c-eb82b91f512a" />
 
 ## Features
 
-* Natural Language to SQL Conversion
-* PostgreSQL Database Integration
-* AI-Powered Business Insight Generation
-* Interactive Streamlit Dashboard
-* Automatic Data Visualization
-* Revenue Analysis and Customer Analytics
-* Modular Project Structure
-* Environment Variable Management using .env
-
----
+- Natural Language to SQL Conversion using Mistral AI
+- PostgreSQL Database Integration
+- AI-Powered Business Insight Generation
+- Interactive Streamlit Dashboard
+- Automatic Data Visualization with Matplotlib
+- Dynamic SQL Query Generation
+- Revenue Analysis and Customer Analytics
+- Retail Sales Performance Reporting
+- Prompt Engineering for Accurate SQL Generation
+- Docker Containerization
+- Modular and Scalable Project Architecture
+- Environment Variable Management using .env
 
 ## Tech Stack
 
 ### Programming Language
 
-* Python
+- Python
 
 ### Database
 
-* PostgreSQL
+- PostgreSQL
+- SQLAlchemy
 
 ### AI / LLM
 
-* Mistral AI
-* LangChain
+- Mistral AI
+- LangChain
+- Prompt Engineering
 
 ### Data Processing
 
-* Pandas
-* NumPy
+- Pandas
+- NumPy
 
-### Visualization
+### Visualization & Dashboard
 
-* Matplotlib
-* Streamlit
+- Matplotlib
+- Streamlit
+
+### DevOps & Deployment
+
+- Docker
 
 ### Development Tools
 
-* VS Code
-* Git & GitHub
+- VS Code
+- Git
+- GitHub
 
----
-
+  
 ## Dataset
 
 The project uses the Online Retail Dataset containing over 400,000 retail transactions.
@@ -119,65 +134,28 @@ Retail-Intelligence-AI/
 │   ├── query_executor.py
 │   ├── explanation_generator.py
 │   ├── chart_generator.py
-│   └── prompts.py
+│   ├── prompts.py
+│   └── test_mistral.py
 │
 ├── data/
-│   └── online_retail.csv
+│   ├── cleaned_retail_sales.csv
+│   └── online_retail_II.xlsx
 │
 ├── database/
+│   ├── create_tables.sql
+│   ├── db_connection.py
 │   └── load_data.py
 │
+├── notebooks/
+│   └── data_cleaning.ipynb
+│
+├── Dockerfile
+├── .dockerignore
 ├── requirements.txt
 ├── README.md
 └── .env
 ```
 
----
-
-## Installation
-
-### Clone Repository
-
-```bash
-git clone <repository-url>
-cd AI-SQL-Analyst
-```
-
-### Create Virtual Environment
-
-```bash
-python -m venv venv
-```
-
-### Activate Virtual Environment
-
-Windows:
-
-```bash
-venv\Scripts\activate
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Configure Environment Variables
-
-Create a `.env` file:
-
-```env
-MISTRAL_API_KEY=your_api_key
-```
-
-### Run Streamlit Application
-
-```bash
-streamlit run app/streamlit_app.py
-```
-
----
 
 ## Sample Questions
 
@@ -210,7 +188,24 @@ streamlit run app/streamlit_app.py
 
 <img width="1807" height="515" alt="image" src="https://github.com/user-attachments/assets/63495a0e-421e-4b5d-9d9a-8bfc54268fe6" />
 
----
+### Docker container running
+
+<img width="1593" height="626" alt="image" src="https://github.com/user-attachments/assets/4b4dc029-0864-4a60-93fb-2d249cad9b5b" />
+
+
+
+## Real-World Applications
+
+This project can be used by:
+
+- Retail companies for sales analysis
+- Business analysts for quick reporting
+- Non-technical managers who do not know SQL
+- E-commerce platforms for revenue monitoring
+- Data teams for self-service analytics
+
+The system reduces dependency on SQL expertise by allowing users to interact with databases using natural language.
+
 
 ## Learning Outcomes
 
@@ -233,7 +228,6 @@ Through this project I gained hands-on experience in:
 * Download Results as CSV
 * Multi-Database Support
 * User Authentication
-* Docker Containerization
 * Cloud Deployment
 * Advanced Analytics Dashboard
 * Role-Based Access Control
@@ -245,6 +239,3 @@ Through this project I gained hands-on experience in:
 Nishant Chavan
 
 B.Tech Electronics & Telecommunication Engineering
-
-
->>>>>>> ea8b6e94fa8dcee62ff7da4977285998a03626a5
