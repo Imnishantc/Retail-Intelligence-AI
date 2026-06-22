@@ -1,9 +1,9 @@
+import os
+from dotenv import load_dotenv
 from sqlalchemy import create_engine
 
+load_dotenv()
+
 engine = create_engine(
-    "postgresql://postgres:1234@host.docker.internal:5432/retaildb"
+    os.getenv("DATABASE_URL")
 )
-
-connection = engine.connect()
-
-print("Database Connected Successfully!")
