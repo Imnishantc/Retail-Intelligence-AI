@@ -170,23 +170,26 @@ Retail-Intelligence-AI/
 ## Screenshots
 
 ### Dashboard
-<img width="1912" height="920" alt="image" src="https://github.com/user-attachments/assets/8dad631b-588d-49e3-baeb-a18e3b00b6ca" />
+<img width="1917" height="930" alt="image" src="https://github.com/user-attachments/assets/30e624bb-337e-43c2-8368-493037e1ec58" />
 
 
 ### Generated SQL
 
-<img width="1903" height="565" alt="image" src="https://github.com/user-attachments/assets/84bb498c-729c-48bb-84eb-4cdb556d70a4" />
+<img width="1913" height="775" alt="image" src="https://github.com/user-attachments/assets/1d6b86a7-d4e8-4419-96e5-32319ba2b019" />
 
-<img width="1907" height="365" alt="image" src="https://github.com/user-attachments/assets/b643beff-21af-4e75-a57b-fc30e89f2ade" />
+<img width="1916" height="745" alt="image" src="https://github.com/user-attachments/assets/49469f9e-d629-4e3d-a49c-66ec14cae497" />
+
 
 ### Business Insights
 
-<img width="1817" height="270" alt="image" src="https://github.com/user-attachments/assets/e86eb108-d4a5-4a63-852f-525b64df82b8" />
+<img width="1906" height="337" alt="image" src="https://github.com/user-attachments/assets/574a804c-2d08-4d7c-b306-603cd2e26d8a" />
+
 
 
 ### Visualization
 
-<img width="1807" height="515" alt="image" src="https://github.com/user-attachments/assets/63495a0e-421e-4b5d-9d9a-8bfc54268fe6" />
+<img width="1917" height="781" alt="image" src="https://github.com/user-attachments/assets/bd8f51cd-10e9-4807-8de1-d2eb89b9b263" />
+
 
 ### Docker container running
 
